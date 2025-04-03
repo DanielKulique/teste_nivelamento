@@ -1,4 +1,4 @@
-EXECUTAR OS COMANDOS NO DIRETÓRIOS
+# EXECUTAR OS COMANDOS NO DIRETÓRIOS
 1 -
 -cd .\api\
 -uvicorn main:app --reload
