@@ -5,3 +5,7 @@ Este projeto implementa um conjunto de tarefas para avaliação técnica, inclui
 - Processamento de dados contábeis
 - Banco de dados MySQL
 - API FastAPI integrada com Vue.js 
+
+Para rodar o projeto, instale as dependências necessárias:
+---bash
+pip install -r requirements.txt
