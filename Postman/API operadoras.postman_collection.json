@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "9d22eeeb-5f50-4898-accb-94e466515960",
+		"name": "API operadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43740788",
+		"_collection_link": "https://danielkulique.postman.co/workspace/Daniel-Kulique's-Workspace~6822f465-245a-4104-87f6-e93c9d295434/collection/43740788-9d22eeeb-5f50-4898-accb-94e466515960?action=share&source=collection_link&creator=43740788"
+	},
+	"item": [
+		{
+			"name": "buscar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/buscar?termo=operadora",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "termo",
+									"value": "operadora"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 03 Apr 2025 22:52:16 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "5367"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Registro_ANS\": 424285,\n        \"CNPJ\": 57522360000170,\n        \"Razao_Social\": \"AIRES OPERADORA DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"AIRES OPERADORA DE SAUDE \",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"AVENIDA PRESIDENTE KENNEDY\",\n        \"Numero\": \"1001.0\",\n        \"Complemento\": \"BLOCO D\",\n        \"Bairro\": \"PEIXINHOS\",\n        \"Cidade\": \"Olinda\",\n        \"UF\": \"PE\",\n        \"CEP\": \"53230971\",\n        \"DDD\": \"81\",\n        \"Telefone\": \"992463135\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"jjppcc@gmail.com\",\n        \"Representante\": \"JOSE PEREIRA DA COSTA\",\n        \"Cargo_Representante\": \"ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": null,\n        \"Data_Registro_ANS\": \"2024-12-16\"\n    },\n    {\n        \"Registro_ANS\": 413330,\n        \"CNPJ\": 4257073000114,\n        \"Razao_Social\": \"AMEP FREGUESIA OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"AMEP FREGUESIA OPERADORA DE PLANOS DE SAUDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA ARAGUAIA\",\n        \"Numero\": \"13\",\n        \"Complemento\": null,\n        \"Bairro\": \"JACAREPAGUA\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"22745270\",\n        \"DDD\": \"21\",\n        \"Telefone\": \"39104000\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"amep.operadora@uol.com.br\",\n        \"Representante\": \"ANA MARLI VIDEIRA PEIXOTO FAZZINI\",\n        \"Cargo_Representante\": \"SOCIA GERENTE\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2001-03-16\"\n    },\n    {\n        \"Registro_ANS\": 417874,\n        \"CNPJ\": 8192597000125,\n        \"Razao_Social\": \"BEM MAIS ODONTO OPERADORA ODONTOLÓGICA LTDA.\",\n        \"Nome_Fantasia\": \"BEM MAIS ODONTO OPERADORA ODONTOLÓGICA LTDA.\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"RUA JOSEPHINA MANDOTTI\",\n        \"Numero\": \"88\",\n        \"Complemento\": null,\n        \"Bairro\": \"JARDIM MAIA\",\n        \"Cidade\": \"Guarulhos\",\n        \"UF\": \"SP\",\n        \"CEP\": \"07115080\",\n        \"DDD\": \"11\",\n        \"Telefone\": \"23583368\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"administrativo@bemmaisodonto.com.br\",\n        \"Representante\": \"GILBERTO MAIDA MELLACE JUNIOR\",\n        \"Cargo_Representante\": \"REPRESENTANTE\",\n        \"Regiao_de_Comercializacao\": 6,\n        \"Data_Registro_ANS\": \"2011-02-03\"\n    },\n    {\n        \"Registro_ANS\": 412015,\n        \"CNPJ\": 3670297000190,\n        \"Razao_Social\": \"MH VIDA - OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Nome_Fantasia\": \"MH VIDA - OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA AUGUSTO DE VASCONCELLOS\",\n        \"Numero\": \"544\",\n        \"Complemento\": \"LOJA 148\",\n        \"Bairro\": \"CAMPO GRANDE\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"23050340\",\n        \"DDD\": \"21\",\n        \"Telefone\": \"34059452\",\n        \"Fax\": 34059475,\n        \"Endereco_eletronico\": \"ouvidoria@mhvida.com.br\",\n        \"Representante\": \"MARCOS HEBER LIMA     \",\n        \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2000-08-25\"\n    },\n    {\n        \"Registro_ANS\": 422851,\n        \"CNPJ\": 36765005000152,\n        \"Razao_Social\": \"ODONTO MAIS BRASIL OPERADORA DE PLANOS ODONTOLOGICO LTDA\",\n        \"Nome_Fantasia\": \"ODONTO MAIS BRASIL OPERADORA DE PLANOS ODONTOLOGICO\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"AV RIO JUTAI\",\n        \"Numero\": \"26\",\n        \"Complemento\": \"QD 36 - COND. RESID. ISAIAS VIEIRA\",\n        \"Bairro\": \"NOSSA SENHORA DAS GRACAS\",\n        \"Cidade\": \"Manaus\",\n        \"UF\": \"AM\",\n        \"CEP\": \"69053020\",\n        \"DDD\": \"92\",\n        \"Telefone\": \"93791095\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"administrativo@maisodontobrasil.com.br\",\n        \"Representante\": \"EZEQUIAS NASCIMENTO DOS SANTOS\",\n        \"Cargo_Representante\": \"ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 6,\n        \"Data_Registro_ANS\": \"2021-06-14\"\n    },\n    {\n        \"Registro_ANS\": 419991,\n        \"CNPJ\": 18496204000120,\n        \"Razao_Social\": \"OROS OPERADORA DE PLANOS ODONTOLÓGICOS LTDA ME\",\n        \"Nome_Fantasia\": \"OROS OPERADORA DE PLANOS ODONTOLÓGICOS\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"AVENIDA JOSÉ RUSCHI\",\n        \"Numero\": \"246\",\n        \"Complemento\": null,\n        \"Bairro\": \"CENTRO\",\n        \"Cidade\": \"Santa Teresa\",\n        \"UF\": \"ES\",\n        \"CEP\": \"29650000\",\n        \"DDD\": \"27\",\n        \"Telefone\": \"32591077\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"MARCELOSALVIATO@HOTMAIL.COM\",\n        \"Representante\": \"MARCELO NASCIMENTO SALVIATO\",\n        \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 5,\n        \"Data_Registro_ANS\": \"2015-12-09\"\n    },\n    {\n        \"Registro_ANS\": 351270,\n        \"CNPJ\": 2896924000143,\n        \"Razao_Social\": \"POLI SAUDE OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"POLI SAUDE OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA PARANÁ\",\n        \"Numero\": \"700\",\n        \"Complemento\": null,\n        \"Bairro\": \"CENTRO\",\n        \"Cidade\": \"Pato Branco\",\n        \"UF\": \"PR\",\n        \"CEP\": \"85501074\",\n        \"DDD\": \"46\",\n        \"Telefone\": \"32242210\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"polisaude@polisaudepb.com.br\",\n        \"Representante\": \"JULIANE BLEICH\",\n        \"Cargo_Representante\": \"REPRESENTANTE JUNTO À ANS\",\n        \"Regiao_de_Comercializacao\": 5,\n        \"Data_Registro_ANS\": \"1998-12-24\"\n    },\n    {\n        \"Registro_ANS\": 422134,\n        \"CNPJ\": 34608096000197,\n        \"Razao_Social\": \"UNIVIDA USA OPERADORA EM SAUDE S/A\",\n        \"Nome_Fantasia\": \"UNIVIDA USA OPERADORA EM SAUDE \",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"AV MELCHERT \",\n        \"Numero\": \"926\",\n        \"Complemento\": \"3 ANDAR\",\n        \"Bairro\": \"VILA MATILDE\",\n        \"Cidade\": \"São Paulo\",\n        \"UF\": \"SP\",\n        \"CEP\": \"03508000\",\n        \"DDD\": \"11\",\n        \"Telefone\": \"39957301\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"murilo.giorgini@gmail.com\",\n        \"Representante\": \"MURILO MENDES GIORGINI\",\n        \"Cargo_Representante\": \"diretor financeiro\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2020-02-11\"\n    },\n    {\n        \"Registro_ANS\": 407534,\n        \"CNPJ\": 28023703000154,\n        \"Razao_Social\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Nome_Fantasia\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA SÃO JANUÁRIO\",\n        \"Numero\": \"468\",\n        \"Complemento\": null,\n        \"Bairro\": \"VASCO DA GAMA\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"20921003\",\n        \"DDD\": \"02\",\n        \"Telefone\": \"124026388\",\n        \"Fax\": 133016013,\n        \"Endereco_eletronico\": \"grupoonix2006@yahoo.com.br\",\n        \"Representante\": \"CECI BANDEIRA DE MELO PEREIRA FILHA\",\n        \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"1999-08-23\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "buscar_post",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"termo\": \"operadora\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/buscar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"buscar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 03 Apr 2025 22:56:37 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "5367"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Registro_ANS\": 424285,\n        \"CNPJ\": 57522360000170,\n        \"Razao_Social\": \"AIRES OPERADORA DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"AIRES OPERADORA DE SAUDE \",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"AVENIDA PRESIDENTE KENNEDY\",\n        \"Numero\": \"1001.0\",\n        \"Complemento\": \"BLOCO D\",\n        \"Bairro\": \"PEIXINHOS\",\n        \"Cidade\": \"Olinda\",\n        \"UF\": \"PE\",\n        \"CEP\": \"53230971\",\n        \"DDD\": \"81\",\n        \"Telefone\": \"992463135\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"jjppcc@gmail.com\",\n        \"Representante\": \"JOSE PEREIRA DA COSTA\",\n        \"Cargo_Representante\": \"ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": null,\n        \"Data_Registro_ANS\": \"2024-12-16\"\n    },\n    {\n        \"Registro_ANS\": 413330,\n        \"CNPJ\": 4257073000114,\n        \"Razao_Social\": \"AMEP FREGUESIA OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"AMEP FREGUESIA OPERADORA DE PLANOS DE SAUDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA ARAGUAIA\",\n        \"Numero\": \"13\",\n        \"Complemento\": null,\n        \"Bairro\": \"JACAREPAGUA\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"22745270\",\n        \"DDD\": \"21\",\n        \"Telefone\": \"39104000\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"amep.operadora@uol.com.br\",\n        \"Representante\": \"ANA MARLI VIDEIRA PEIXOTO FAZZINI\",\n        \"Cargo_Representante\": \"SOCIA GERENTE\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2001-03-16\"\n    },\n    {\n        \"Registro_ANS\": 417874,\n        \"CNPJ\": 8192597000125,\n        \"Razao_Social\": \"BEM MAIS ODONTO OPERADORA ODONTOLÓGICA LTDA.\",\n        \"Nome_Fantasia\": \"BEM MAIS ODONTO OPERADORA ODONTOLÓGICA LTDA.\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"RUA JOSEPHINA MANDOTTI\",\n        \"Numero\": \"88\",\n        \"Complemento\": null,\n        \"Bairro\": \"JARDIM MAIA\",\n        \"Cidade\": \"Guarulhos\",\n        \"UF\": \"SP\",\n        \"CEP\": \"07115080\",\n        \"DDD\": \"11\",\n        \"Telefone\": \"23583368\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"administrativo@bemmaisodonto.com.br\",\n        \"Representante\": \"GILBERTO MAIDA MELLACE JUNIOR\",\n        \"Cargo_Representante\": \"REPRESENTANTE\",\n        \"Regiao_de_Comercializacao\": 6,\n        \"Data_Registro_ANS\": \"2011-02-03\"\n    },\n    {\n        \"Registro_ANS\": 412015,\n        \"CNPJ\": 3670297000190,\n        \"Razao_Social\": \"MH VIDA - OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Nome_Fantasia\": \"MH VIDA - OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA AUGUSTO DE VASCONCELLOS\",\n        \"Numero\": \"544\",\n        \"Complemento\": \"LOJA 148\",\n        \"Bairro\": \"CAMPO GRANDE\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"23050340\",\n        \"DDD\": \"21\",\n        \"Telefone\": \"34059452\",\n        \"Fax\": 34059475,\n        \"Endereco_eletronico\": \"ouvidoria@mhvida.com.br\",\n        \"Representante\": \"MARCOS HEBER LIMA     \",\n        \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2000-08-25\"\n    },\n    {\n        \"Registro_ANS\": 422851,\n        \"CNPJ\": 36765005000152,\n        \"Razao_Social\": \"ODONTO MAIS BRASIL OPERADORA DE PLANOS ODONTOLOGICO LTDA\",\n        \"Nome_Fantasia\": \"ODONTO MAIS BRASIL OPERADORA DE PLANOS ODONTOLOGICO\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"AV RIO JUTAI\",\n        \"Numero\": \"26\",\n        \"Complemento\": \"QD 36 - COND. RESID. ISAIAS VIEIRA\",\n        \"Bairro\": \"NOSSA SENHORA DAS GRACAS\",\n        \"Cidade\": \"Manaus\",\n        \"UF\": \"AM\",\n        \"CEP\": \"69053020\",\n        \"DDD\": \"92\",\n        \"Telefone\": \"93791095\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"administrativo@maisodontobrasil.com.br\",\n        \"Representante\": \"EZEQUIAS NASCIMENTO DOS SANTOS\",\n        \"Cargo_Representante\": \"ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 6,\n        \"Data_Registro_ANS\": \"2021-06-14\"\n    },\n    {\n        \"Registro_ANS\": 419991,\n        \"CNPJ\": 18496204000120,\n        \"Razao_Social\": \"OROS OPERADORA DE PLANOS ODONTOLÓGICOS LTDA ME\",\n        \"Nome_Fantasia\": \"OROS OPERADORA DE PLANOS ODONTOLÓGICOS\",\n        \"Modalidade\": \"Odontologia de Grupo\",\n        \"Logradouro\": \"AVENIDA JOSÉ RUSCHI\",\n        \"Numero\": \"246\",\n        \"Complemento\": null,\n        \"Bairro\": \"CENTRO\",\n        \"Cidade\": \"Santa Teresa\",\n        \"UF\": \"ES\",\n        \"CEP\": \"29650000\",\n        \"DDD\": \"27\",\n        \"Telefone\": \"32591077\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"MARCELOSALVIATO@HOTMAIL.COM\",\n        \"Representante\": \"MARCELO NASCIMENTO SALVIATO\",\n        \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n        \"Regiao_de_Comercializacao\": 5,\n        \"Data_Registro_ANS\": \"2015-12-09\"\n    },\n    {\n        \"Registro_ANS\": 351270,\n        \"CNPJ\": 2896924000143,\n        \"Razao_Social\": \"POLI SAUDE OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Nome_Fantasia\": \"POLI SAUDE OPERADORA DE PLANO DE SAUDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA PARANÁ\",\n        \"Numero\": \"700\",\n        \"Complemento\": null,\n        \"Bairro\": \"CENTRO\",\n        \"Cidade\": \"Pato Branco\",\n        \"UF\": \"PR\",\n        \"CEP\": \"85501074\",\n        \"DDD\": \"46\",\n        \"Telefone\": \"32242210\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"polisaude@polisaudepb.com.br\",\n        \"Representante\": \"JULIANE BLEICH\",\n        \"Cargo_Representante\": \"REPRESENTANTE JUNTO À ANS\",\n        \"Regiao_de_Comercializacao\": 5,\n        \"Data_Registro_ANS\": \"1998-12-24\"\n    },\n    {\n        \"Registro_ANS\": 422134,\n        \"CNPJ\": 34608096000197,\n        \"Razao_Social\": \"UNIVIDA USA OPERADORA EM SAUDE S/A\",\n        \"Nome_Fantasia\": \"UNIVIDA USA OPERADORA EM SAUDE \",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"AV MELCHERT \",\n        \"Numero\": \"926\",\n        \"Complemento\": \"3 ANDAR\",\n        \"Bairro\": \"VILA MATILDE\",\n        \"Cidade\": \"São Paulo\",\n        \"UF\": \"SP\",\n        \"CEP\": \"03508000\",\n        \"DDD\": \"11\",\n        \"Telefone\": \"39957301\",\n        \"Fax\": null,\n        \"Endereco_eletronico\": \"murilo.giorgini@gmail.com\",\n        \"Representante\": \"MURILO MENDES GIORGINI\",\n        \"Cargo_Representante\": \"diretor financeiro\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"2020-02-11\"\n    },\n    {\n        \"Registro_ANS\": 407534,\n        \"CNPJ\": 28023703000154,\n        \"Razao_Social\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Nome_Fantasia\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n        \"Modalidade\": \"Medicina de Grupo\",\n        \"Logradouro\": \"RUA SÃO JANUÁRIO\",\n        \"Numero\": \"468\",\n        \"Complemento\": null,\n        \"Bairro\": \"VASCO DA GAMA\",\n        \"Cidade\": \"Rio de Janeiro\",\n        \"UF\": \"RJ\",\n        \"CEP\": \"20921003\",\n        \"DDD\": \"02\",\n        \"Telefone\": \"124026388\",\n        \"Fax\": 133016013,\n        \"Endereco_eletronico\": \"grupoonix2006@yahoo.com.br\",\n        \"Representante\": \"CECI BANDEIRA DE MELO PEREIRA FILHA\",\n        \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n        \"Regiao_de_Comercializacao\": 4,\n        \"Data_Registro_ANS\": \"1999-08-23\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

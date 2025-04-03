@@ -1,12 +1,12 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import pandas as pd
 import numpy as np
 import json
 
 app = FastAPI()
 
-# Configurar CORS para permitir requisiçoes de outro dominio 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,11 +14,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Limpar cedulas vazias
-def clean_dataframe(df):
-    return df.replace({np.nan: None})  # Ou substitua por '' se preferir strings vazias
+# validar POST
+class BuscaRequest(BaseModel):
+    termo: str
 
-# Carregar o CSV com tratamento adequado
+def clean_dataframe(df):
+    return df.replace({np.nan: None})
+
 try:
     df = pd.read_csv(
         'Relatorio_cadop.csv',
@@ -27,29 +29,36 @@ try:
         encoding='utf-8',
         on_bad_lines='skip'
     )
-    # Limpar os dados
     df = clean_dataframe(df)
 except Exception as e:
     print(f"Erro ao carregar CSV: {str(e)}")
-    df = pd.DataFrame()  # DataFrame vazio em caso de erro
+    df = pd.DataFrame()
 
+# requisicao GET - Usado no front
 @app.get("/buscar")
 async def buscar(termo: str):
+    return buscar_operadora(termo)
+
+# requisicao POST - Apenas para teste
+@app.post("/buscar")
+async def buscar_post(request: BuscaRequest):
+    return buscar_operadora(request.termo)
+
+# funcao de busca para operadoras
+def buscar_operadora(termo: str):
     try:
         termo = termo.strip().lower()
-        
+
         if not termo or len(termo) < 2:
-            return {"error": "O termo deve ter pelo menos 2 caracteres"}
-        
-        # Filtrar e limpar resultados
+            raise HTTPException(status_code=400, detail="O termo deve ter pelo menos 2 caracteres")
+
         resultado = df[
             df['Nome_Fantasia'].str.lower().str.contains(termo, case=False, na=False)
         ].head(50)
-        
-        # Converter NaN para None antes da serialização JSON
+
         resultado_clean = resultado.where(pd.notnull(resultado), None)
-        
+
         return json.loads(resultado_clean.to_json(orient='records'))
-        
+
     except Exception as e:
-        return {"error": f"Erro na busca: {str(e)}"}
+        raise HTTPException(status_code=500, detail=f"Erro na busca: {str(e)}")
