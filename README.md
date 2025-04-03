@@ -7,5 +7,5 @@ Este projeto implementa um conjunto de tarefas para avaliação técnica, inclui
 - API FastAPI integrada com Vue.js 
 
 Para rodar o projeto, instale as dependências necessárias:
----bash
-pip install -r requirements.txt
+
+bash - pip install -r requirements.txt
