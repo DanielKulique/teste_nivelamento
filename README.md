@@ -9,9 +9,11 @@ Este projeto implementa um conjunto de tarefas para avaliação técnica, inclui
 # Pré-requisitos
 
 Para baixar este projeto, execute o seguinte comando no terminal:
+
 bash - git clone https://github.com/DanielKulique/teste_nivelamento.git
 
 Antes de rodar o projeto, certifique-se de ter instalado:
+
 bash - pip install -r requirements.txt
 
 # Backend (Python + FastAPI)
