@@ -12,7 +12,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 bash - pip install -r requirements.txt
 
-#Backend (Python + FastAPI)
+# Backend (Python + FastAPI)
 - [Python 3.x](https://www.python.org/)
 - [pip](https://pip.pypa.io/en/stable/)
 - [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html) (caso utilize SQL que dependa do JDK)
